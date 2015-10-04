@@ -26,9 +26,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #Installed gems 
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'rails_12factor', group: :production
-gem "font-awesome-rails"
+gem 'font-awesome-rails', '~> 4.4.0.0'
 gem 'pry-rails', :group => :development
 gem 'autoprefixer-rails', '~> 6.0.3'
+gem 'devise', '~> 3.5.2'
 
 #<------ Installed gems End ------>
 
