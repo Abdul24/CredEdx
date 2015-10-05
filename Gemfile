@@ -30,6 +30,7 @@ gem 'font-awesome-rails', '~> 4.4.0.0'
 gem 'pry-rails', :group => :development
 gem 'autoprefixer-rails', '~> 6.0.3'
 gem 'devise', '~> 3.5.2'
+gem 'friendly_id', '~> 5.1.0'
 
 #<------ Installed gems End ------>
 
