@@ -31,7 +31,7 @@ gem 'pry-rails', :group => :development
 gem 'autoprefixer-rails', '~> 6.0.3'
 gem 'devise', '~> 3.5.2'
 gem 'friendly_id', '~> 5.1.0'
-
+gem 'simple_form'
 #<------ Installed gems End ------>
 
 
