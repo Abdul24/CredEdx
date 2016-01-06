@@ -2,3 +2,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+
+.form-inline .form-control{
+  margin: 0px;
+  border-radius: 0px;
+}
+.btn-primary{
+  margin-left: -4px;
+  border-radius: 0px;                  
+}
