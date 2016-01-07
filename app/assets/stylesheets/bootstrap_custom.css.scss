@@ -1,13 +1,32 @@
+//Sass Styles first.
 
+// navbar style sass
+$navbar-default-bg: white;
+$navbar-default-border: white;
+
+// Sass styles must come before @import "bootstrap". Will test other apps. 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
 
+//header-flash-style
+.flash-message-container{
+  font-size:18px;
+  text-align:center;
+}
+  
 .form-inline .form-control{
   margin: 0px;
   border-radius: 0px;
 }
+
 .btn-primary{
-  margin-left: -4px;
+  display: inline-block;
+  margin-left: -5px;
   border-radius: 0px;                  
 }
+
+
+
+
+

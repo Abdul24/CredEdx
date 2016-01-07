@@ -1,3 +1,4 @@
+<div class="container-fluid">
 <h1>Signup to Express Your Interest!</h1>
 
 <%= simple_form_for(@signup, html: { class: 'form-inline' }) do |f| %>
@@ -14,6 +15,7 @@
   <% end %>
 
  
-<%= f.input :email, input_html:{:size => 25}, label: false, required: false, placeholder: 'Email me when it is ready' %>
+<%= f.input :email, input_html:{:size => 30}, label: false, required: false, placeholder: 'Email me when it is ready' %>
 <%= f.button :submit, 'SEND', class: "btn btn-primary" %>
 <% end %>
+</div>
