@@ -1,21 +1,8 @@
-<div class="container-fluid">
-<h1>Signup to Express Your Interest!</h1>
-
-<%= simple_form_for(@signup, html: { class: 'form-inline' }) do |f| %>
-  <% if @signup.errors.any? %>
-    <div id="error_explanation">
-      <h3><%= pluralize(@signup.errors.count, "error") %> prohibited your registration from being completed:</h3>
-
-      <ul>
-      <% @signup.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
- 
-<%= f.input :email, input_html:{:size => 30}, label: false, required: false, placeholder: 'Email me when it is ready' %>
-<%= f.button :submit, 'SEND', class: "btn btn-primary" %>
-<% end %>
+<div class="container-fluid signup">
+  <div class = "vtext">
+<h1>Credit Karma gives you a credit score,<br>
+    CrededX helps you get Credit Approved. </h1><p>
+   <p>With our online credit course in just one month.</p>
+  <%= render 'layouts/simpleForm' %>
+  </div>
 </div>

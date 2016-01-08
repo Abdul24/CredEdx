@@ -12,19 +12,8 @@
     <% flash.each do |name, msg| %>
       <%= content_tag(:div,msg, class: "alert alert-info")%>     
     <% end %>
-
-  
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="http://crededx.herokuapp.com/">
-        <%= image_tag("greylogo.png", width: '180', height: '37', alt: 'Crededx', class: "logo") %>
-      </a>
-    </div>
-  </div>
-</nav>
   </div> 
-  
+  <%= render 'layouts/navbarBrand' %>
 <%= yield %>
 
 </body>

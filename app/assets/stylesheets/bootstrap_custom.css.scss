@@ -26,7 +26,24 @@ $navbar-default-border: white;
   border-radius: 0px;                  
 }
 
-
-
-
+//Signup contianer below navbar
+.signup{
+  text-align: center;
+  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),image-url("zoom1028.jpg");
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-image: fixed;
+  background-size: cover;
+  background-color: #464646;
+  height: 675px;
+  padding-top:250px;
+  margin:30px;
+}
+.vtext h1{
+  font-size:50px;
+  color:white;
+}
+.vtext p{
+  font-size:25px;
+  color:white;
 

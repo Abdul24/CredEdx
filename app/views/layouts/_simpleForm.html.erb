@@ -1,0 +1,17 @@
+
+<%= simple_form_for(@signup, html: { class: 'form-inline' }) do |f| %>
+  <% if @signup.errors.any? %>
+    <div id="error_explanation">
+      <h3><%= pluralize(@signup.errors.count, "error") %> prohibited your registration from being completed:</h3>
+
+      <ul>
+      <% @signup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<%= f.input :email, input_html:{:size => 30}, label: false, required: false, placeholder: 
+'email@example.com' %>
+<%= f.button :submit, 'Get Invited', class: "btn btn-primary" %>
+<% end %>
