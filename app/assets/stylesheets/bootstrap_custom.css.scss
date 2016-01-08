@@ -30,7 +30,7 @@ $navbar-default-border: white;
 #signup{
   text-align: center;
   background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
-	url(asset-path('zoom1028.jpg'));
+	asset_url('zoom1028.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-image: fixed;
