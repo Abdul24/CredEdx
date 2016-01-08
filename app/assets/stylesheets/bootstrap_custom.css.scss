@@ -29,7 +29,8 @@ $navbar-default-border: white;
 //Signup contianer below navbar
 .signup{
   text-align: center;
-  background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.4)),image_tag("zoom1028.jpg");
+  background:image-url("zoom1028.jpg");
+  
   background-position: center center; 
   background-repeat: no-repeat;
   background-image: fixed;
@@ -46,4 +47,4 @@ $navbar-default-border: white;
 .vtext p{
   font-size:25px;
   color:white;
-
+}
