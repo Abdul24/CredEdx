@@ -1,37 +1,31 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'courses/index'
+ 
+  root 'signups#new'
+  resources :signups, only: [:new, :create]
+  
+  resources :courses
+  
+  #get 'courses/index'
 
-  get 'courses/show'
+  #get 'courses/show'
 
-  get 'courses/new'
+  #get 'courses/new'
 
-  get 'courses/create'
+  #get 'courses/create'
 
-  get 'courses/update'
+  #get 'courses/update'
 
-  get 'courses/edit'
+  #get 'courses/edit'
 
-  get 'courses/destroy'
+  #get 'courses/destroy'
 
-  get 'course/index'
-
-  get 'course/show'
-
-  get 'course/new'
-
-  get 'course/create'
-
-  get 'course/update'
-
-  get 'course/edit'
-
-  get 'course/destroy'
+ 
 
   #root 'static_pages#home'
   
-  resources :signups, only: [:new, :create]
-  root 'signups#new'
+  
+ 
   
 
   # The priority is based upon order of creation: first created -> highest priority.

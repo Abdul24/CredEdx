@@ -1,0 +1,86 @@
+@media print {
+  .container {
+    width: auto;
+  }
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
+
+
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+ 
+ /* Custom, iPhone Retina */ 
+ @media only screen and (min-width : 320px) {...}
+
+ /* Extra Small Devices, Phones */ 
+ @media only screen and (min-width : 480px) {...}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: $screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: $creen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: $screen-lg-min) { ... }
+
+
+<--------lAST STYLE BELOW WAS USED
+
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+ #signup{
+   background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+	image-url('zoom1028.jpg');
+ }
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+ #signup{
+   background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+	image-url('zoom1028.jpg');
+ }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+ #signup{
+   background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+	image-url('zoom1028.jpg');
+ }
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+ #signup{
+   background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+	image-url('zoom1028.jpg');
+ }
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+ #signup{
+   background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+	image-url('zoom1028.jpg');
+ }
+}
+
+
+
+
+

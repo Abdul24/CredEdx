@@ -1,24 +1,43 @@
 //Sass Styles first.
 
 // navbar style sass
-$navbar-default-bg: white;
-$navbar-default-border: white;
+$navbar-default-bg: #fff;
+//$navbar-default-border: #34495e;
 
 // Sass styles must come before @import "bootstrap". Will test other apps. 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
 
-//header-flash-style
+
+body {
+	font-family: 'Lato', sans-serif, Helvetica;
+	font-size: 2em;
+	margin: 0px;
+  background-color:#f9f9f7;
+}
+
+.navbar {
+    margin-bottom:0px;
+    border-radius:0px;
+    padding-bottom:15px;
+    color:white;
+}
+.navbar-default .navbar-brand{
+  
+}
+
+/*header-flash-style begins*/
 .flash-message-container{
   font-size:18px;
   text-align:center;
 }
-  
+ /*header-flash-style ends*/ 
 .form-inline .form-control{
   margin: 0px;
   border-radius: 0px;
 }
+
 
 .btn-primary{
   display: inline-block;
@@ -26,25 +45,54 @@ $navbar-default-border: white;
   border-radius: 0px;                  
 }
 
-//Signup contianer below navbar
+/*Signup contianer below navbar*/
+ 
 #signup{
-  text-align: center;
-  background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)),
-	image-url('stock1.jpg');
+  background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.7)),
+	image-url('zoom1028.jpg');
   background-position: center center; 
   background-repeat: no-repeat;
   background-image: fixed;
   background-size: cover;
   background-color: #464646;
-  height: 700px;
+  height: 800px;
   padding-top:250px;
+}
+  
+/*Signup contianer ends*/
 
+/*signup copy contianer begins*/
+#signup{
+  color:#fff;
+  text-align:center;
 }
-.vtext h1{
-  font-size:50px;
-  color:white;
+
+#signup p{
+  font-size: 3em;
+  line-height:1em;
 }
-.vtext p{
-  font-size:25px;
-  color:white;
-}
+
+
+/*signup copy contianer ends*/
+
+//Footer container begins
+//#footer{
+  //text-align:center;
+  //font-size:18px;
+  //height:175px;
+  
+
+
+//#footer h2{
+  //font-size:35px;
+  //color:#34495E;
+  //text-align:center;
+  //padding-top: 10px;
+
+
+
+
+
+
+
+
