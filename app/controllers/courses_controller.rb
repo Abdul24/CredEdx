@@ -1,9 +1,10 @@
 class CoursesController < ApplicationController
   def index
+    @courses = Course.all
   end
 
   def show
-    @course = Course.find(params[:id])
+    @course = Course.find_by(title: params[:id])  
   end
 
   def new
@@ -12,9 +13,9 @@ class CoursesController < ApplicationController
 
   def create
     @course = Course.new(course_params)
-    if @project.save
+    if @course.save
       flash[:notice] = "Course has been created."
-      redirect_to @course
+      redirect_to courses_path
     else
     # nothing, yet
   end
