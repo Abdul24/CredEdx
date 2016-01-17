@@ -5,14 +5,11 @@ $navbar-default-bg: #fff;
 //$navbar-default-border: #34495e;
 
 // Sass styles must come before @import "bootstrap". Will test other apps. 
-@import "bootstrap-sprockets";
 @import "bootstrap";
-@import "font-awesome";
-
 
 body {
-	font-family: 'Lato', sans-serif, Helvetica;
-	font-size: 2em;
+	font-family: 'Roboto', sans-serif, Helvetica;
+	font-size: 1em;
 	margin: 0px;
   background-color:#f9f9f7;
 }

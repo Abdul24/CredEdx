@@ -24,9 +24,10 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 #Installed gems 
-gem 'bootstrap', '~> 4.0.0.alpha3'
-gem 'sass', '~> 3.4', '>= 3.4.21'
-gem 'sprockets-rails', '~> 3.0'
+source 'https://rails-assets.org' do
+gem 'rails-assets-bootstrap', ">= 4.0.0.alpha.2"
+gem 'rails-assets-tether'
+     end  
 gem 'rails_12factor', group: :production
 gem 'font-awesome-rails', '~> 4.4.0.0'
 gem 'pry-rails', :group => :development
