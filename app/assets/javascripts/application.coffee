@@ -1,2 +1,0 @@
-#= require tether
-#= require bootstrap
