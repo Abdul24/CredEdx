@@ -7,14 +7,16 @@
   <%@courses.each_slice(4) do|course| %>
     <div class="row">
       <% course.each do |course|%>
-        <div class="col-md-3 col-sm-3">
+       <div class ="col-md-12>">
+        <div class="col-sm-6 col-lg-4">
             <h5><%= course.title %></h5>
             <h3><%= course. description %></h3>
           <%= link_to 'View More', course_path(course), class:'btn btn-primary' %>
       </div>
+  </div>
        <%end%>
    </div>
   <%end%>
-</div>
+  </div>
 </div>  
   

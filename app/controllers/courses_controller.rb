@@ -4,7 +4,9 @@ class CoursesController < ApplicationController
   end
 
   def show
-    @course = Course.find_by(title: params[:id])  
+    @courses = Course.all
+    @course  = Course.find_by(title: params[:id]) 
+    render "courses/#{params[:id]}"
   end
 
   def new
@@ -30,6 +32,11 @@ end
   def destroy
   end
  
+def railsapp
+end
+
+def railsapp2
+end
   
 private
       def course_params

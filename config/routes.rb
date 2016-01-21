@@ -3,11 +3,11 @@ Rails.application.routes.draw do
  
   root 'signups#new'
   resources :signups, only: [:new, :create]
-  
+ 
   resources :courses
-  
+  get "courses/*course" => "courses#show"
   #get 'courses/index'
-
+   
   #get 'courses/show'
 
   #get 'courses/new'
