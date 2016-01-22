@@ -2,21 +2,24 @@
 <h1>Courses#index</h1>
 <p>Find me in app/views/courses/index.html.erb</p>
 <%= link_to "New Course", new_course_path %>
+</div>
 
-<div id="course-index">
-  <%@courses.each_slice(4) do|course| %>
-    <div class="row">
-      <% course.each do |course|%>
-       <div class ="col-md-12>">
-        <div class="col-sm-6 col-lg-4">
-            <h5><%= course.title %></h5>
-            <h3><%= course. description %></h3>
-          <%= link_to 'View More', course_path(course), class:'btn btn-primary' %>
-      </div>
-  </div>
-       <%end%>
-   </div>
-  <%end%>
-  </div>
-</div>  
-  
+<div class ="container">
+   <div id="course-index">
+       <%@courses.each_slice(4) do|course| %>
+          <div class="row">
+            <% course.each do |course|%>
+              <div class ="col-md-12>">
+              <div class="col-sm-6 col-lg-4">
+              <div class="card course <%=course.title %>">
+              <h5 class="title"><%= course.title %></h5>
+              <h3><%= course. description %></h3>
+              <%= link_to 'View More', course_path(course), class:'btn btn-primary' %>
+             </div>
+         </div>
+        <%end%>
+       </div>
+     <%end%>
+    </div>
+  </div>  
+</div> 
